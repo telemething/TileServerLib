@@ -1,0 +1,37 @@
+﻿<Page
+    x:Class="TileServerLibTestUi.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TileServerLibTestUi"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="450" Width="1112">
+
+    <Grid Margin="34,0,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="79*"/>
+            <RowDefinition Height="24*"/>
+            <RowDefinition Height="122*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="FetchAddress" Content="Fetch Address" Margin="153,75,0,0" VerticalAlignment="Top" Click="FetchAddress_Click" Grid.Row="2"/>
+        <Button x:Name="FetchMap" Content="FetchMap" Margin="35,75,0,0" VerticalAlignment="Top" Click="FetchMap_Click" RenderTransformOrigin="-3.589,-0.31" Grid.Row="2"/>
+        <TextBlock x:Name="statusTextBlock" HorizontalAlignment="Left" Margin="23,168,0,0" Text="Status: ---" TextWrapping="Wrap" VerticalAlignment="Top" Width="942" Height="52" Grid.Row="2"/>
+        <Button x:Name="FetchEleTile" Content="Fetch Elevation Tile" Margin="533,23,0,0" Click="FetchElevationTile_Click" RenderTransformOrigin="0.284,1.316" VerticalAlignment="Top" Grid.Row="2"/>
+        <Button x:Name="FetchImageTile" Content="Fetch Image Tile" Margin="382,23,0,0" RenderTransformOrigin="-1.36,-0.102" Click="FetchImageTile_Click" VerticalAlignment="Top" Grid.Row="2"/>
+        <TextBlock x:Name="ZoomLabel" HorizontalAlignment="Left" Margin="35,40,0,0" Text="Zoom" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="ZoomValue" HorizontalAlignment="Left" Margin="104,33,0,0" Text="12" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Rectangle HorizontalAlignment="Left" Height="251" Margin="23,85,0,0" Stroke="Black" VerticalAlignment="Top" Width="311" Grid.RowSpan="3"/>
+        <TextBlock x:Name="LatLabel" HorizontalAlignment="Left" Margin="35,113,0,0" Text="Lat" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="LatValue" HorizontalAlignment="Left" Margin="104,106,0,0" Text="47.642567" TextWrapping="Wrap" VerticalAlignment="Top" Width="98"/>
+        <TextBlock x:Name="LonLabel" HorizontalAlignment="Left" Margin="35,7,0,0" Text="Lon" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Row="1"/>
+        <TextBox x:Name="LonValue" HorizontalAlignment="Left" Margin="104,0,0,0" Text="-122.136919" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Row="1"/>
+        <TextBlock x:Name="SizeLabel" HorizontalAlignment="Left" Margin="35,16,0,0" Text="Size" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Row="2"/>
+        <TextBox x:Name="SizeValue" HorizontalAlignment="Left" Margin="104,9,0,0" Text="8" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Row="2"/>
+        <TextBlock x:Name="XLabel" HorizontalAlignment="Left" Margin="390,121,0,0" Text="X" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="XValue" HorizontalAlignment="Left" Margin="459,114,0,0" Text="662" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.365,11.788"/>
+        <TextBlock x:Name="YLabel" HorizontalAlignment="Left" Margin="390,0,0,0" Text="Y" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Row="1"/>
+        <TextBox x:Name="YValue" HorizontalAlignment="Left" Margin="459,0,0,0" Text="1425" TextWrapping="Wrap" VerticalAlignment="Center" RenderTransformOrigin="0.332,12.995" Grid.Row="1"/>
+        <Rectangle HorizontalAlignment="Left" Height="251" Margin="370,85,0,0" Stroke="Black" VerticalAlignment="Top" Width="311" Grid.RowSpan="3"/>
+    </Grid>
+</Page>
